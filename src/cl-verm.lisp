@@ -21,6 +21,6 @@
 
 (defmacro add (var)
   `(add-index
-    ((lambda (x)
+    ((lambda (var)
        (lambda ()
-         (setq ,var x))) ,(deep-copy var))))
+         (setq ,var var))) ,(deep-copy var))))
