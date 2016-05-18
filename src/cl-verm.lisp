@@ -1,6 +1,7 @@
 (in-package :cl-user)
 (defpackage cl-verm
-  (:use :cl))
+  (:use :cl)
+  (:export :deep-copy :add-index :commit :checkout :add))
 (in-package :cl-verm)
 
 (defvar logs '())
